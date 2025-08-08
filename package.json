@@ -1,0 +1,21 @@
+{
+  "name": "http-status-pages",
+  "version": "1.0.0",
+  "main": "gulpfile.js",
+  "scripts": {
+    "build": "npx gulp generate",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Alex Yu",
+  "license": "MIT",
+  "description": "Stylized pages with different HTML status codes",
+  "devDependencies": {
+    "gulp": "^5.0.1",
+    "gulp-pug": "^5.0.0"
+  },
+  "dependencies": {
+    "gulp-plumber": "^1.2.1",
+    "gulp-rename": "^2.1.0"
+  }
+}
