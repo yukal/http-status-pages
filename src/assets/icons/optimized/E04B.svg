@@ -1,0 +1,9 @@
+<svg width="72" height="72" fill="currentColor" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>.nof{fill: none} .fill{fill:#000} .line{stroke:#000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}</style>
+  </defs>
+  <g id="wikidata">
+    <path class="line nof" d="M11.19 20.794h49.619v30.412H11.19z" />
+    <path class="line fill" d="M49.175 24.303v23.403m0-23.403h-2.339v23.403h2.339m-9.453-23.403v23.403m0-23.403h-2.34v23.403h2.34M26.724 24.303v23.403m0-23.403h-2.338v23.403h2.338m-5.909-23.403v23.403m0-23.403h-2.338v23.403h2.338m35.466-23.403v23.403m-3.544-23.403v23.403m-9.453-23.403v23.403M33.84 24.303v23.403m-3.544-23.403v23.403M14.933 24.303v23.403" />
+  </g>
+</svg>

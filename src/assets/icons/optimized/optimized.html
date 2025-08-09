@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Optimized Icons Demo</title>
+  <style>
+    html {
+      box-sizing: border-box
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+        "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+        "Droid Sans", "Helvetical Neue", sans-serif;
+      font-size: 1.125rem;
+      text-align: center;
+      color: #151723;
+    }
+
+    .container {
+      margin: 0 auto;
+      max-width: 1024px;
+      text-align: center;
+    }
+
+    .title {
+      font-size: x-large;
+      font-weight: 400;
+      margin-bottom: 4rem
+    }
+
+    img {
+      width: 120px;
+      height: 120px;
+      margin: .5rem;
+      padding: 1rem;
+      border-radius: 50%;
+      background-color: #f2f5f8;
+      transition: background-color ease-in-out 200ms;
+    }
+
+    a:hover img {
+      background-color: #d2deea;
+    }
+
+    img::before {
+      content: '';
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      -webkit-transform: scale(2.2);
+      -ms-transform: scale(2.2);
+      transform: scale(2.2);
+      border-radius: 50%;
+      background-color: #f2f5f8;
+      z-index: -1;
+    }
+  </style>
+</head>
+
+<body>
+  <section class="container">
+    <h3 class="title">These icons have been optimized in size and weight to fit into a single sprite.</h3>
+
+    <a href="https://openmoji.org/library/emoji-1FA99/" target="_blank"><img src="./1FA99.svg"></a>
+    <a href="https://openmoji.org/library/emoji-1F9D0/" target="_blank"><img src="./1F9D0.svg"></a>
+    <a href="https://openmoji.org/library/emoji-E0AB/" target="_blank"><img src="./E0AB.svg"></a>
+    <a href="https://openmoji.org/library/emoji-E145/" target="_blank"><img src="./E145.svg"></a>
+    <img src="./mask.svg">
+    <a href="https://openmoji.org/library/emoji-1F4A5/" target="_blank"><img src="./1F4A5.svg"></a>
+    <a href="https://openmoji.org/library/emoji-1F383/" target="_blank"><img src="./1F383.svg"></a>
+    <a href="https://openmoji.org/library/emoji-1FAAC/" target="_blank"><img src="./1FAAC.svg"></a>
+    <a href="https://openmoji.org/library/emoji-1F9F1/" target="_blank"><img src="./1F9F1.svg"></a>
+    <img src="./shield-lock.svg">
+    <a href="https://openmoji.org/library/emoji-E308/" target="_blank"><img src="./E308.svg"></a>
+    <a href="https://openmoji.org/library/emoji-E147/" target="_blank"><img src="./E147.svg"></a>
+    <a href="https://openmoji.org/library/emoji-E04B/" target="_blank"><img src="./E04B.svg"></a>
+  </section>
+</body>
+
+</html>
