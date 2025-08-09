@@ -1,0 +1,15 @@
+<svg width="72" height="72" fill="currentColor" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>.nof{fill:none}.line{stroke:#000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}</style>
+  </defs>
+  <g id="shield-lock">
+    <path class="line nof" d="M36 17.63c-7.383 5.79-9.797 6.807-16.383 8.852C19.974 42.74 27.316 49.568 36 57.497c8.684-7.93 16.026-14.758 16.383-31.015-6.586-2.045-9-3.063-16.383-8.852z" />
+    <path class="line nof" d="M52.845 51.675H42.094m-12.188 0H19.155m1.322-17.17H12.39m4.196 6.681h6.01m37.014-6.68h-8.087m-2.119 6.68h6.01m-9.88-17.21v-6.283h7.311m-26.379 6.283v-6.283h-7.311M36 38.39v2.675m4.841-6.718s.841-7.469-4.843-7.469c-5.683 0-4.843 7.468-4.843 7.468" />
+    <path class="line nof" d="M29.205 34.348h13.589v10.03H29.205z" />
+    <circle class="line nof" cx="15.961" cy="51.676" r="3.193" />
+    <circle class="line nof" cx="56.035" cy="51.676" r="3.193" />
+    <circle class="line nof" cx="15.956" cy="17.693" r="3.188" />
+    <circle class="line nof" cx="56.035" cy="17.696" r="3.193" />
+    <circle class="line nof" cx="36" cy="38.39" r=".66" />
+  </g>
+</svg>
