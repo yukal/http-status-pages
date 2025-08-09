@@ -49,7 +49,7 @@ module.exports = {
   405: 'hand-stop', // cross
   406: 'hand-stop',
   407: 'mask', // eye-hand, mask, jack-o-lantern
-  408: 'time-cycling',
+  408: 'timer',
   409: 'collision',
   410: 'emo-hiding',
   411: 'emo-sad',
@@ -62,7 +62,7 @@ module.exports = {
   418: 'teapot-1',
   421: 'wall',
   422: 'emo-sad',
-  423: 'locked-shield', // locked, locked-shield, emo-silence
+  423: 'shield-lock', // locked, shield-lock, emo-silence
   424: 'emo-sad',
   425: 'emo-sad',
   426: 'emo-sad',
