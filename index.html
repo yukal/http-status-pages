@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>HTTP Status Codes – Demo</title>
+
+  <link rel="stylesheet" href="assets/styles.css" />
+  <script src="assets/core.js"></script>
+</head>
+
+<body>
+  <!-- https://codepen.io/Alex-Yu-Soft-Engineer/pen/azvEqoN -->
+
+  <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+    <symbol id="chevron-l" viewBox="0 0 24 24">
+      <path d="M 12.2166,2.3867 2.6033,12 12.2166,21.6133" />
+    </symbol>
+    <symbol id="chevron-r" viewBox="0 0 24 24">
+      <path d="M 2.6034,2.3867 12.2167,12 2.6034,21.6133" />
+    </symbol>
+  </svg>
+
+  <section id="error-container">
+    <div class="error">
+      <div class="error-icon">
+        <img src="./assets/sprite.svg#fawkes-mask" alt="sprite fawkes-mask" id="http-status-icon">
+      </div>
+      <h1 id="http-status-code">401</h1>
+      <h2 id="http-status-text">Unauthorized</h2>
+      <p id="http-status-desc">Authentication is required and has failed or has not yet been provided.</p>
+      <a href="/">Home page</a>
+    </div>
+  </section>
+
+  <svg class="icon left">
+    <use href="#chevron-l"></use>
+  </svg>
+  <svg class="icon right">
+    <use href="#chevron-r"></use>
+  </svg>
+
+  <footer class="footer">
+    <p class="ms-1">
+      <kbd>Home</kbd>
+      <kbd>End</kbd>
+    </p>
+    <p class="me-1">
+      <kbd>PgUp</kbd>
+      <kbd>PgDn</kbd>
+    </p>
+
+    <p><kbd>1</kbd><kbd>4</kbd></p>
+    <p><kbd>2</kbd><kbd>5</kbd></p>
+    <p><kbd>3</kbd><kbd>6</kbd></p>
+
+    <p class="arrows offset ms-1">
+      <kbd>&larr;</kbd>
+    </p>
+    <p class="arrows">
+      <kbd>&uarr;</kbd>
+      <kbd>&darr;</kbd>
+    </p>
+    <p class="arrows offset me-1">
+      <kbd>&rarr;</kbd>
+    </p>
+
+    <p class="hint">Use keyboard <br> To navigate</p>
+  </footer>
+</body>
+
+</html>
