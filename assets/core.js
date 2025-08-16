@@ -397,6 +397,11 @@
     511: 'emo-dead',
   };
 
+  var sortedStatusCodes = (function () {
+    var { defaults, ...codes } = statusCodes;
+    return Object.keys(codes).map(Number).sort((a, b) => a - b);
+  })();
+
   var setStatusCode = (code) => {
     var statusZone = code.toString().charAt(0) + 'xx';
 
@@ -441,22 +446,24 @@
   };
 
   var prev = (step = 1) => {
-    if (statusCode - step > 99) {
-      statusCode -= step;
-    } else {
-      statusCode = 500;
+    var prevStatusCode = statusCode - step;
+
+    if (prevStatusCode < 100) {
+      prevStatusCode = 600;
     }
 
+    statusCode = getPrevNearestStatusCode(prevStatusCode);
     setStatusCode(statusCode);
   }
 
   var next = (step = 1) => {
-    if (statusCode + step < 600) {
-      statusCode += step;
-    } else {
-      statusCode = 100;
+    var nextStatusCode = statusCode + step;
+
+    if (nextStatusCode > 599) {
+      nextStatusCode = 99;
     }
 
+    statusCode = getNextNearestStatusCode(nextStatusCode);
     setStatusCode(statusCode);
   }
 
@@ -516,7 +523,7 @@
       setStatusCode(statusCode);
     },
     End: () => {
-      statusCode = 599;
+      statusCode = getPrevNearestStatusCode(600);
       setStatusCode(statusCode);
     },
 
@@ -557,5 +564,60 @@
 
     // Init
     setStatusCode(statusCode);
+
+    // Focus on the page
+    document.getElementById("error-container").focus();
   });
+
+  /**
+   * Function to find the nearest status code that is less than or equal to the given number.
+   * Uses binary search for optimized lookup.
+   * @param {number} inputNumber - Input number to search for the nearest status code.
+   * @returns {number} - The nearest status code less than or equal to the input number, or null if not found.
+   */
+  function getPrevNearestStatusCode(inputNumber) {
+    var low = 0;
+    var high = sortedStatusCodes.length - 1;
+    var result = 511;
+
+    while (low <= high) {
+      const mid = Math.floor((low + high) / 2);
+      const midCode = sortedStatusCodes[mid];
+
+      if (midCode <= inputNumber) {
+        result = midCode; // Store possible result
+        low = mid + 1;    // Continue search in the right part
+      } else {
+        high = mid - 1;   // Continue search in the left part
+      }
+    }
+
+    return result;
+  }
+
+  /**
+   * Function to find the nearest status code that is greater than or equal to the given number.
+   * Uses binary search for optimized lookup.
+   * @param {number} inputNumber - Input number to search for the nearest status code.
+   * @returns {number} - The nearest status code greater than or equal to the input number, or 0 if not found.
+   */
+  function getNextNearestStatusCode(inputNumber) {
+    var low = 0;
+    var high = sortedStatusCodes.length - 1;
+    var result = 100;
+
+    while (low <= high) {
+      const mid = Math.floor((low + high) / 2);
+      const midCode = sortedStatusCodes[mid];
+
+      if (midCode >= inputNumber) {
+        result = midCode; // Store possible result
+        high = mid - 1; // Continue search in the left part
+      } else {
+        low = mid + 1; // Continue search in the right part
+      }
+    }
+
+    return result;
+  }
 })();
