@@ -172,6 +172,52 @@ body {
   margin-right: 1.6rem;
 }
 
+/* HEADER */
+
+header.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  padding: 1rem;
+  background-color: #fff;
+  text-align: center;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+  font-family: 'Nunito', sans-serif;
+}
+
+header.header button {
+  display: block;
+  margin: 0.3rem;
+  padding: 0.3rem 0.6rem;
+  border: 0;
+  border-radius: 0.16rem;
+  background-color: #fff;
+  font-size: 0.96rem;
+  color: #6a899f; /*#6e7e92*/
+  cursor: pointer;
+  transition: color 0.2s ease;
+  outline-width: 0;
+  font-family: 'Nunito', sans-serif;
+}
+
+header.header button:hover {
+  color: #274a63;
+}
+header.header button.active {
+  color: #274a63;
+  font-weight: 600;
+  outline: 2px solid #e3e9ed; /* #ced9e2; */
+  outline-offset: -2px;
+}
+
 /* FOOTER */
 
 .arrows kbd {
