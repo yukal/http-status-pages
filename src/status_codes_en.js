@@ -2,6 +2,10 @@
 
 module.exports = {
   defaults: {
+    unknown: {
+      error: 'Unknown Status',
+      desc: `Oh, we have no idea what this status is for. Maybe it hasn't been implemented.`,
+    },
     '4xx': {
       error: 'Oops! Something went wrong.',
       desc: 'Hmm... We have no idea what kind of error this is.',

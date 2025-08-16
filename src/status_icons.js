@@ -3,6 +3,7 @@
 // status icons
 module.exports = {
   defaults: {
+    unknown: 'emo-confusion',
     '4xx': 'emo-confusion',
     '5xx': 'emo-dead',
   },
