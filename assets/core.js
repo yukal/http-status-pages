@@ -449,7 +449,7 @@
     var prevStatusCode = statusCode - step;
 
     if (prevStatusCode < 100) {
-      prevStatusCode = 600;
+      prevStatusCode = 599;
     }
 
     statusCode = getPrevNearestStatusCode(prevStatusCode);
@@ -460,7 +460,7 @@
     var nextStatusCode = statusCode + step;
 
     if (nextStatusCode > 599) {
-      nextStatusCode = 99;
+      nextStatusCode = 100;
     }
 
     statusCode = getNextNearestStatusCode(nextStatusCode);
@@ -523,7 +523,7 @@
       setStatusCode(statusCode);
     },
     End: () => {
-      statusCode = getPrevNearestStatusCode(600);
+      statusCode = getPrevNearestStatusCode(599);
       setStatusCode(statusCode);
     },
 
