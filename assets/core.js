@@ -448,22 +448,20 @@
   var prev = (step = 1) => {
     var prevStatusCode = statusCode - step;
 
-    if (prevStatusCode < 100) {
-      prevStatusCode = 599;
-    }
+    statusCode = Object.hasOwn(statusCodes, prevStatusCode)
+      ? prevStatusCode
+      : getPrevNearestStatusCode(prevStatusCode);
 
-    statusCode = getPrevNearestStatusCode(prevStatusCode);
     setStatusCode(statusCode);
   }
 
   var next = (step = 1) => {
     var nextStatusCode = statusCode + step;
 
-    if (nextStatusCode > 599) {
-      nextStatusCode = 100;
-    }
+    statusCode = Object.hasOwn(statusCodes, nextStatusCode)
+      ? nextStatusCode
+      : getNextNearestStatusCode(nextStatusCode);
 
-    statusCode = getNextNearestStatusCode(nextStatusCode);
     setStatusCode(statusCode);
   }
 
