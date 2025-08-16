@@ -78,7 +78,7 @@ module.exports = {
   501: 'emo-dead',
   502: 'emo-dead',
   503: 'emo-dead',
-  504: 'time-cycling',
+  504: 'timer',
   505: 'emo-dead',
   506: 'emo-dead',
   507: 'emo-dead',

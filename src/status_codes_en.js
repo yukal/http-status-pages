@@ -4,11 +4,11 @@ module.exports = {
   defaults: {
     '4xx': {
       error: 'Oops! Something went wrong.',
-      desc: 'Hmm... I have no idea what kind of error this is.',
+      desc: 'Hmm... We have no idea what kind of error this is.',
     },
     '5xx': {
       error: 'Oops! Something went wrong.',
-      desc: 'Hmm... I have no idea what kind of error this is.',
+      desc: 'Hmm... We have no idea what kind of error this is.',
     },
   },
 
