@@ -228,7 +228,7 @@
       setStatusCode(statusCode);
     },
     End: () => {
-      statusCode = getPrevNearestStatusCode(599);
+      statusCode = sortedStatusCodes[sortedStatusCodes.length-1];
       setStatusCode(statusCode);
     },
 
