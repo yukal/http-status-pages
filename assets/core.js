@@ -581,8 +581,8 @@
     var result = 511;
 
     while (low <= high) {
-      const mid = Math.floor((low + high) / 2);
-      const midCode = sortedStatusCodes[mid];
+      var mid = Math.floor((low + high) / 2);
+      var midCode = sortedStatusCodes[mid];
 
       if (midCode <= inputNumber) {
         result = midCode; // Store possible result
@@ -607,8 +607,8 @@
     var result = 100;
 
     while (low <= high) {
-      const mid = Math.floor((low + high) / 2);
-      const midCode = sortedStatusCodes[mid];
+      var mid = Math.floor((low + high) / 2);
+      var midCode = sortedStatusCodes[mid];
 
       if (midCode >= inputNumber) {
         result = midCode; // Store possible result
