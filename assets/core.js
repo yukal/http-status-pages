@@ -316,14 +316,14 @@
       '5xx': 'emo-dead',
     },
 
-    // 1xx Інформаційні
+    // 1xx Informational
 
     100: '',
     101: '',
     102: '',
     103: '',
 
-    // 2xx Успіх
+    // 2xx Success
 
     200: '',
     201: '',
@@ -336,7 +336,7 @@
     208: '',
     226: '',
 
-    // 3xx Перенаправлення
+    // 3xx Redirection
 
     300: '',
     301: '',
@@ -348,7 +348,7 @@
     307: '',
     308: '',
 
-    // 4xx Помилка клієнта
+    // 4xx Client Error
 
     400: 'emo-confusion',
     401: 'fawkes-mask',
@@ -382,7 +382,7 @@
     431: 'emo-bandage',
     451: 'emo-sad',
 
-    // 5xx Помилка сервера
+    // 5xx Server Error
     500: 'emo-dead',
     501: 'emo-dead',
     502: 'emo-dead',
