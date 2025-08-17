@@ -3,21 +3,38 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="viewport-fit" content="cover">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta http-equiv="Content-Security-Policy"
     content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self'; frame-src 'none'; object-src 'none'; base-uri 'self'; form-action 'self';">
   <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
 
+  <!-- https://codepen.io/Alex-Yu-Soft-Engineer/pen/azvEqoN -->
+  <link rel="canonical" href="https://yukal.github.io/http-status-pages/">
+
   <meta name="referrer" content="no-referrer-when-downgrade">
   <meta name="robots" content="index, follow">
   <meta name="googlebot" content="index, follow">
   <meta name="google" content="notranslate">
 
-  <meta name="description" content="HTTP Status Codes – Demo">
-  <meta name="keywords" content="HTTP, Status Codes, Demo, Error Pages, 404, 401, Unauthorized, Web Development">
+  <meta name="description" content="HTTP Status Codes Demo. A one-page presentation of stylized HTTP status codes is a fun way to refresh those boring default status pages and decorate your pages however you like.">
+  <meta name="keywords" content="HTTP Status Codes, Error Pages, 404, 401, Unauthorized, Web Development, Demo">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="HTTP Status Codes Demo">
+  <meta property="og:description"
+    content="Learn about HTTP error pages: 404, 401, Unauthorized, and more for web development.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://yukal.github.io/http-status-pages/">
+  <meta property="og:image" content="https://yukal.github.io/http-status-pages/assets/favicon/android-chrome-192x192.png">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="HTTP Status Codes Demo">
+  <meta name="twitter:description"
+    content="Learn about HTTP error pages: 404, 401, Unauthorized, and more for web development.">
+  <meta name="twitter:image" content="https://yukal.github.io/http-status-pages/assets/favicon/android-chrome-192x192.png">
 
   <!-- Copyright -->
   <meta name="copyright" content="Copyright © 2025 Alex Yu">
@@ -25,15 +42,13 @@
 
   <!-- License -->
   <meta name="license" content="https://creativecommons.org/licenses/by-sa/4.0/">
-  <meta name="license" content="https://creativecommons.org/licenses/by-sa/4.0/legalcode">
-  <meta name="license" content="https://creativecommons.org/licenses/by-sa/4.0/deed.en">
 
   <!-- Startup configuration -->
   <link rel="manifest" href="manifest.webmanifest">
 
   <!-- Fallback application metadata for legacy browsers -->
-  <meta name="application-name" content="HTTP Status Codes – Demo">
-  <meta name="apple-mobile-web-app-title" content="HTTP Status Codes – Demo">
+  <meta name="application-name" content="HTTP Status Codes Demo">
+  <meta name="apple-mobile-web-app-title" content="HTTP Status Codes Demo">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="theme-color" content="#ffffff">
@@ -49,50 +64,51 @@
   <link rel="icon" type="image/png" sizes="512x512" href="assets/favicon/android-chrome-512x512.png">
   <link rel="apple-touch-icon" href="assets/favicon/apple-touch-icon.png">
 
-  <title>HTTP Status Codes – Demo</title>
+  <title>HTTP Status Codes Demo: Stylized Error Pages</title>
 
   <!-- Assets -->
   <link rel="stylesheet" href="assets/styles.css">
   <script src="assets/core_locale.min.js"></script>
-  <script src="assets/core.js"></script>
 </head>
 
 <body>
-  <!-- https://codepen.io/Alex-Yu-Soft-Engineer/pen/azvEqoN -->
-
-  <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
-    <symbol id="chevron-l" viewBox="0 0 24 24">
-      <path d="M 12.2166,2.3867 2.6033,12 12.2166,21.6133" />
-    </symbol>
-    <symbol id="chevron-r" viewBox="0 0 24 24">
-      <path d="M 2.6034,2.3867 12.2167,12 2.6034,21.6133" />
-    </symbol>
-  </svg>
-
   <header class="header">
-    <button>CZ</button>
-    <button>DE</button>
-    <button class="active">EN</button>
-    <button>FR</button>
-    <button>HI</button>
-    <button>JP</button>
-    <button>KR</button>
-    <button>PL</button>
-    <button>TR</button>
-    <button>UA</button>
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+      <symbol id="chevron-l" viewBox="0 0 24 24">
+        <path d="M 12.2166,2.3867 2.6033,12 12.2166,21.6133" />
+      </symbol>
+      <symbol id="chevron-r" viewBox="0 0 24 24">
+        <path d="M 2.6034,2.3867 12.2167,12 2.6034,21.6133" />
+      </symbol>
+    </svg>
+
+    <nav>
+      <button>CZ</button>
+      <button>DE</button>
+      <button class="active">EN</button>
+      <button>FR</button>
+      <button>HI</button>
+      <button>JP</button>
+      <button>KR</button>
+      <button>PL</button>
+      <button>TR</button>
+      <button>UA</button>
+    </nav>
   </header>
 
-  <section id="error-container">
+  <main id="error-container">
     <div class="error">
-      <div class="error-icon">
-        <img src="assets/sprite.svg#fawkes-mask" id="http-status-icon">
-      </div>
+      <figure class="error-icon">
+        <img id="http-status-icon" src="assets/sprite.svg#fawkes-mask"
+          alt="Guy Fawkes mask illustrating the 401 Unauthorized status code">
+      </figure>
+
       <h1 id="http-status-code">401</h1>
       <h2 id="http-status-text">Unauthorized</h2>
       <p id="http-status-desc">Authentication is required and has failed or has not yet been provided.</p>
       <a href="/http-status-pages/">Home page</a>
     </div>
-  </section>
+  </main>
 
   <svg class="icon left">
     <use href="#chevron-l"></use>
@@ -102,7 +118,7 @@
   </svg>
 
   <footer class="footer">
-    <p class="mx-1"><span class="hook">↪</span> <a href="https://github.com/yukal/http-status-pages">GitHub</a></p>
+    <p class="mx-1"><span class="hook">↪</span> <a href="https://github.com/yukal/http-status-pages/">GitHub</a></p>
     <p class="mx-1"><span class="hook">↪</span> <a href="https://colorlib.com/wp/cat/404-error/">Colorlib</a></p>
     <p class="ms-1 me-2"><span class="hook">↪</span> <a href="https://openmoji.org/">OpenMoji</a></p>
 
@@ -132,6 +148,8 @@
 
     <p class="hint">Use keyboard <br> To navigate</p>
   </footer>
+
+  <script src="assets/core.js"></script>
 </body>
 
 </html>

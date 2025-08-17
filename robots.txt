@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://yukal.github.io/http-status-pages/sitemap.xml

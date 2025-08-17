@@ -37,10 +37,11 @@ body {
 }
 
 .error .error-icon {
+  display: inline-block;
   position: absolute;
   left: 0;
   top: 0;
-  display: inline-block;
+  margin: 0;
 }
 
 .error-icon img {
@@ -182,6 +183,9 @@ header.header {
   z-index: 2;
   padding: 1rem;
   background-color: #fff;
+}
+
+header.header nav {
   text-align: center;
 
   display: flex;
