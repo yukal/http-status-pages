@@ -31,7 +31,7 @@
       "type": "image/png"
     },
     {
-      "src": "assets/favicon/icon.svg",
+      "src": "assets/favicon/favicon.svg",
       "sizes": "any",
       "type": "image/svg+xml"
     }
